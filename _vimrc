@@ -80,6 +80,8 @@ Bundle 'The-NERD-tree'
 
 Bundle 'Emmet.vim'
 
+Bundle 'Lokaltog/vim-easymotion'
+
 Bundle 'terryma/vim-multiple-cursors'
 
 filetype plugin indent on
@@ -116,6 +118,10 @@ cmap ;; <esc>
 vmap ; v
 
 nmap <silent> <leader>ev :e $MYVIMRC<CR
+
+"EasyMotion Stuff
+"map <Leader> <Plug>(easymotion-w)
+let g:EasyMotion_leader_key = 'f'
 
 syntax enable
 set background=dark
