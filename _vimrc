@@ -110,6 +110,13 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>w
 
+"映射ESC键
+imap ;; <esc>
+cmap ;; <esc>
+vmap ; v
+
+nmap <silent> <leader>ev :e $MYVIMRC<CR
+
 syntax enable
 set background=dark
 colorscheme molokai
