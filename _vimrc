@@ -117,7 +117,7 @@ imap ;; <esc>
 cmap ;; <esc>
 vmap ; v
 
-nmap <silent> <leader>ev :e $MYVIMRC<CR
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
 
 "EasyMotion Stuff
 "map <Leader> <Plug>(easymotion-w)
@@ -140,6 +140,9 @@ let g:user_emmet_settings = {
   \    'extends' : 'html',
   \  },
   \}
+
+"Toggle Fullscreen in Windows using gvim(gvimfullscreen.dll required)
+map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
   
 "Toggle Menu and Toolbar
 set guioptions-=m
