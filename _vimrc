@@ -68,7 +68,7 @@ filetype plugin on
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
 
 "使用Vundle来管理Vundle
 Bundle 'gmarik/vundle'
@@ -84,6 +84,7 @@ Bundle 'Lokaltog/vim-easymotion'
 
 Bundle 'terryma/vim-multiple-cursors'
 
+call vundle#end()
 filetype plugin indent on
 
 "vim有一个状态栏 加上powline则有两个状态栏
