@@ -67,7 +67,7 @@ filetype plugin on
 ""开始使用Vundle的必须配置
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 "使用Vundle来管理Vundle
