@@ -110,7 +110,7 @@ imap   <leader><leader>e   <plug>(emmet-expand-abbr)
 "imap   <leader><leader>m   <plug>(emmet-merge-lines)
 "imap   <leader><leader>c   <plug>(emmet-code-pretty)
 
-Bundle 'Lokaltog/vim-easymotion'
+Bundle 'easymotion/vim-easymotion'
 "Set mapleader
 let mapleader = ","
 "Overwrite the default s key to search with two keystroke using easymotion
