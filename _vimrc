@@ -1,105 +1,143 @@
 "==================================
-"    Vim基本配置
+"    Basic Vim Configuration
 "===================================
 
-""关闭vi的一致性模式 避免以前版本的一些Bug和局限
 set nocompatible
-"配置backspace键工作方式
-"set backspace=indent,eol,start
-""显示行号
-set number
-"设置在编辑过程中右下角显示光标的行列信息
-"set ruler
-""当一行文字很长时取消换行
-set nowrap
 
-"在状态栏显示正在输入的命令
+"backspace key method
+"set backspace=indent,eol,start
+
+"Show Line Number
+set number
+
+"Show Line Info(row and column info)
+"set ruler
+
+"Set Wrap when line string's too long
+set wrap
+
+"Show the inserting command line in the status bar
 "set showcmd
-""设置历史记录条数
+
+"Set the maxinum of the history
 set history=1000
 
-"设置取消备份 禁止临时文件生成
+"Do Not create the temp file
 set nobackup
+
 "set noswapfile
-""突出现实当前行列
+
+"Show the crosser
 set cursorline
 set cursorcolumn
 
-"设置匹配模式 类似当输入一个左括号时会匹配相应的那个右括号
+"Set the pattern mode
 "set showmatch
-""设置C/C++方式自动对齐
+
+"Set autoindent the way like C/C++
 set autoindent
 set cindent
 
-"开启语法高亮功能
+"Turn on the syntax highlight
 syntax enable
 syntax on
-""指定配色方案为256色
+
+"Set the color schema to 256
 set t_Co=256
 
-"设置搜索时忽略大小写
+"Ignore case sensitive when searching
 set ignorecase
-""设置在Vim中可以使用鼠标 防止在Linux终端下无法拷贝
+
+"Turn on using mouse in Vim so we can copy in Linux Terminal
 set mouse=a
 
-"设置Tab宽度
+"Set tab width
 "set tabstop=4
-""设置自动对齐空格数
+
+"Set autointent space num
 set shiftwidth=4
-"设置按退格键时可以一次删除4个空格
+
+"Delete 4 spaces when hitting backspace key
 "set softtabstop=4
-""设置按退格键时可以一次删除4个空格
-set smarttab
-"将Tab键自动转换成空格 真正需要Tab键时使用[Ctrl + V + Tab]
-"set expandtab
-""设置编码方式
+
+"set smarttab
+
+"Set encoding
 set encoding=utf-8
-"自动判断编码时 依次尝试一下编码
+
+"Auto determine the encoding by turn
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
-""检测文件类型
+
+"Detect filetype
 filetype on
-"针对不同的文件采用不同的缩进方式
+
+"Using different indent method according to different filetype
 "filetype indent on
-""允许插件
+
+"Allow to use plugin
 filetype plugin on
-"启动智能补全
+
+"Turn on intelligent autocomplete
 "filetype plugin indent on
-""开始使用Vundle的必须配置
+
+"Vundle Configuration Begin
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-"使用Vundle来管理Vundle
-Bundle 'gmarik/vundle'
-""PowerLine插件 状态栏增强展示
+Bundle 'VundleVim/Vundle.vim'
+
 Bundle 'Lokaltog/vim-powerline'
-"安装NERD-tree
+
 Bundle 'The-NERD-tree'
-""Vundle配置必须 开启插件
 
 Bundle 'Emmet.vim'
+"Map Emmet Expand Trigger key
+imap   <leader><leader>e   <plug>(emmet-expand-abbr)
+"imap   <leader><leader>;   <plug>(emmet-expand-word)
+"imap   <leader><leader>u   <plug>(emmet-update-tag)
+"imap   <leader><leader>d   <plug>(emmet-balance-tag-inward)
+"imap   <leader><leader>D   <plug>(emmet-balance-tag-outward)
+"imap   <leader><leader>n   <plug>(emmet-move-next)
+"imap   <leader><leader>N   <plug>(emmet-move-prev)
+"imap   <leader><leader>i   <plug>(emmet-image-size)
+"imap   <leader><leader>/   <plug>(emmet-toggle-comment)
+"imap   <leader><leader>j   <plug>(emmet-split-join-tag)
+"imap   <leader><leader>k   <plug>(emmet-remove-tag)
+"imap   <leader><leader>a   <plug>(emmet-anchorize-url)
+"imap   <leader><leader>A   <plug>(emmet-anchorize-summary)
+"imap   <leader><leader>m   <plug>(emmet-merge-lines)
+"imap   <leader><leader>c   <plug>(emmet-code-pretty)
 
 Bundle 'Lokaltog/vim-easymotion'
+"Set mapleader
+let mapleader = ","
+"Overwrite the default s key to search with two keystroke using easymotion
+nmap s <Plug>(easymotion-s)
+"Turn on case insensitive feature
+let g:EasyMotion_smartcase = 1
+"JK motions: Line Motions
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
 
 Bundle 'terryma/vim-multiple-cursors'
+
+Bundle 'tpope/vim-surround'
+
+"Bundle 'Valloric/YouCompleteMe'
 
 call vundle#end()
 filetype plugin indent on
 
-"vim有一个状态栏 加上powline则有两个状态栏
-""设置powerline状态栏
-
 set laststatus=2
-set t_Co=256
 let g:Powline_symbols='fancy'
-set nocompatible
 set enc=utf-8
 let termencoding=&encoding
 set fileencodings=utf-8,gbk,ucs-bom,cp936
 set guifont=Ubuntu\ Mono\ for\ Powerline\ 12
 
-"设置NERDTree的选项
+"Set NERDTree Options
 let NERDTreeMinimalUI=1
 let NERDChristmasTree=1
 "" Give a shortcut key to NERD Tree
@@ -107,26 +145,26 @@ let NERDChristmasTree=1
 nmap <F3> :NERDTree  <CR>
 "nnoremap <F10> :exe 'NERDTreeToggle'<CR>
 
-"分屏跳转映射
+"Mappings of Jumping to Split Window
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>w
 
-"映射ESC键
-imap ;; <esc>
-cmap ;; <esc>
+"Mappings of Moving Split Window
+nmap J <C-w>J
+nmap K <C-w>K
+nmap H <C-w>H
+nmap L <C-w>L
+
+"Mapping ESC key
+imap jj <esc>
 vmap ; v
 
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
-
-"EasyMotion Stuff
-"map <Leader> <Plug>(easymotion-w)
-let g:EasyMotion_leader_key = 'f'
+nmap <silent> <leader>sv :source $MYVIMRC<CR>
 
 syntax enable
-set background=dark
-colorscheme molokai
 
 "Emmet Settings
 let g:user_emmet_settings = {
@@ -155,3 +193,15 @@ map <silent> <F2> :if &guioptions =~# 'T' <Bar>
         \set guioptions+=T <Bar>
         \set guioptions+=m <Bar>
     \endif<CR>
+
+"Turn off recording the session
+"autocmd VimEnter * call LoadSession()
+"autocmd VimLeave * call SaveSession()
+"function! SaveSession()
+"   execute 'mksession! $HOME/.vim/sessions/session.vim'
+"endfunction
+"function! LoadSession()
+"   if argc() == 0
+"      execute 'source $HOME/.vim/sessions/session.vim'
+"   endif
+"endfunction
