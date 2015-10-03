@@ -125,6 +125,10 @@ Bundle 'terryma/vim-multiple-cursors'
 
 Bundle 'tpope/vim-surround'
 
+Bundle 'kien/ctrlp.vim'
+"Change the prompt position and width and height
+let g:ctrlp_match_window = 'top,order:btt,min:1,max:10,results:10'
+
 "Bundle 'Valloric/YouCompleteMe'
 
 call vundle#end()
