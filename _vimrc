@@ -145,6 +145,12 @@ let g:gundo_right = 0
 "auto-completion for quotes, parens, brackets, etc
 Bundle 'Raimondi/delimitMate'
 
+"Distraction-free writing in Vim
+Bundle 'junegunn/goyo'
+"g:goyo_width (default: 80)
+"g:goyo_height (default: 85%)
+"g:goyo_linenr (default: 0)
+
 "Bundle 'Valloric/YouCompleteMe'
 
 call vundle#end()
