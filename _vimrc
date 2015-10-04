@@ -111,12 +111,22 @@ imap   <leader><leader>e   <plug>(emmet-expand-abbr)
 "imap   <leader><leader>c   <plug>(emmet-code-pretty)
 
 Bundle 'easymotion/vim-easymotion'
+
+"Turn off the default settins
+let g:EasyMotion_do_mapping = 0
+
 "Set mapleader
 let mapleader = ","
+
 "Overwrite the default s key to search with two keystroke using easymotion
 nmap s <Plug>(easymotion-s)
+
 "Turn on case insensitive feature
 let g:EasyMotion_smartcase = 1
+
+"Word motion
+map <Leader>w <Plug>(easymotion-w)
+
 "JK motions: Line Motions
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
