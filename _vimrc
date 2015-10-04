@@ -127,8 +127,20 @@ Bundle 'tpope/vim-surround'
 
 Bundle 'kien/ctrlp.vim'
 "Change the prompt position and width and height
+"Use <c-f> and <c-b> to cycle between modes.
+"Use <c-d> to switch to filename only search instead of full path.
+"Use <c-r> to switch to regexp mode.
+"Use <c-j>, <c-k> or the arrow keys to navigate the result list.
+"Use <c-t> or <c-v>, <c-x> to open the selected entry in a new tab or in a new split.
+"Use <c-n>, <c-p> to select the next/previous string in the prompt's history.
 let g:ctrlp_match_window = 'top,order:btt,min:1,max:10,results:10'
 let g:ctrlp_switch_buffer = 'et'
+
+Bundle 'sjl/gundo.vim'
+nnoremap <F5> :GundoToggle<CR>
+let g:gundo_width = 50
+let g:gundo_preview_height = 20
+let g:gundo_right = 0
 
 "Bundle 'Valloric/YouCompleteMe'
 
