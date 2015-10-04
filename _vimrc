@@ -161,6 +161,10 @@ Bundle 'junegunn/goyo'
 "g:goyo_height (default: 85%)
 "g:goyo_linenr (default: 0)
 
+"Search code in files
+"Bundle 'ggreer/the_silver_searcher'
+"Bundle 'dyng/ctrlsf.vim'
+
 "Bundle 'Valloric/YouCompleteMe'
 
 call vundle#end()
