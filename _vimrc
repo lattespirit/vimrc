@@ -142,6 +142,9 @@ let g:gundo_width = 50
 let g:gundo_preview_height = 20
 let g:gundo_right = 0
 
+"auto-completion for quotes, parens, brackets, etc
+Bundle 'Raimondi/delimitMate'
+
 "Bundle 'Valloric/YouCompleteMe'
 
 call vundle#end()
