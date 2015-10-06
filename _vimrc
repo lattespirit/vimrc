@@ -207,7 +207,7 @@ nmap L <C-w>L
 
 "Mapping ESC key
 imap jj <esc>
-vmap ; v
+vmap ; <esc>
 
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :source $MYVIMRC<CR>
