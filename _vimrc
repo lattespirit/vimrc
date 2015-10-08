@@ -167,6 +167,8 @@ Bundle 'scrooloose/syntastic'
 
 Bundle 'tpope/vim-commentary'
 
+Bundle 'tpope/vim-unimpaired'
+
 "Bundle 'petdance/ack'
 
 "Search code in files
