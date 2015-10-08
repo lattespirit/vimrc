@@ -168,6 +168,14 @@ Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-commentary'
 
 Bundle 'tpope/vim-unimpaired'
+nmap < [
+nmap > ]
+omap < [
+omap > ]
+xmap < [
+xmap > ]
+
+Bundle 'tpope/vim-repeat'
 
 "Bundle 'petdance/ack'
 
