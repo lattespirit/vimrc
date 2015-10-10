@@ -181,6 +181,8 @@ xmap > ]
 
 Bundle 'tpope/vim-repeat'
 
+Bundle 'altercation/solarized'
+
 "Bundle 'petdance/ack'
 
 "Search code in files
