@@ -83,6 +83,8 @@ filetype plugin on
 "Vundle Configuration Begin
 set nocompatible
 filetype off
+"set rtp+=~/vimfiles/bundle/Vundle.vim
+"call vundle#begin('~/vimfiles/')
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -132,6 +134,8 @@ map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 
 Bundle 'terryma/vim-multiple-cursors'
+"Fix backspace bug when inserting with multiple cursor
+set backspace=indent,eol,start
 
 Bundle 'tpope/vim-surround'
 
