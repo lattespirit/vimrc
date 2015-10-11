@@ -160,7 +160,7 @@ let g:gundo_right = 0
 Bundle 'Raimondi/delimitMate'
 
 "Distraction-free writing in Vim
-Bundle 'junegunn/goyo'
+Bundle 'junegunn/goyo.vim'
 "g:goyo_width (default: 80)
 "g:goyo_height (default: 85%)
 "g:goyo_linenr (default: 0)
@@ -200,7 +200,7 @@ filetype plugin indent on
 set laststatus=2
 let g:Powline_symbols='fancy'
 set enc=utf-8
-let termencoding=&encoding
+set termencoding=&encoding
 set fileencodings=utf-8,gbk,ucs-bom,cp936
 set guifont=Ubuntu\ Mono\ for\ Powerline\ 12
 
