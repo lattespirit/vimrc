@@ -93,6 +93,9 @@ Bundle 'VundleVim/Vundle.vim'
 Bundle 'Lokaltog/vim-powerline'
 
 Bundle 'The-NERD-tree'
+let NERDTreeMinimalUI=1
+let NERDChristmasTree=1
+nmap <F3> :NERDTreeToggle  <CR>
 
 Bundle 'Emmet.vim'
 "Map Emmet Expand Trigger key
@@ -186,6 +189,10 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+Bundle 'jaanauati/vim-wordfuzzycompletion-plugin'
+
+Bundle 'junegunn/vim-easy-align'
+
 "Bundle 'petdance/ack'
 
 "Search code in files
@@ -202,15 +209,7 @@ let g:Powline_symbols='fancy'
 set enc=utf-8
 set termencoding=&encoding
 set fileencodings=utf-8,gbk,ucs-bom,cp936
-set guifont=Ubuntu\ Mono\ for\ Powerline\ 12
-
-"Set NERDTree Options
-let NERDTreeMinimalUI=1
-let NERDChristmasTree=1
-"" Give a shortcut key to NERD Tree
-"map :NERDTreeToggle
-nmap <F3> :NERDTree  <CR>
-"nnoremap <F10> :exe 'NERDTreeToggle'<CR>
+set guifont=Source\ Code\ Pro:h12
 
 "Mappings of Jumping to Split Window
 map <C-h> <C-w>h
@@ -228,8 +227,17 @@ nmap L <C-w>L
 imap jj <esc>
 vmap ; <esc>
 
+"About MYVIMRC File
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :source $MYVIMRC<CR>
+
+"Mappins of Copy/Paste from Clipboard
+vnoremap <leader>y "+y
+nmap <leader>p "+p
+
+"Mapping of ToggleList
+map <silent> <F9> :TlistToggle<CR>
+let Tlist_GainFocus_On_ToggleOpen = 1
 
 syntax enable
 
