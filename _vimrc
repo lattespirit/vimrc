@@ -139,6 +139,8 @@ map <Leader>k <Plug>(easymotion-k)
 Bundle 'terryma/vim-multiple-cursors'
 "Fix backspace bug when inserting with multiple cursor
 set backspace=indent,eol,start
+"Ctrl-p in Visual mode will remove the current virtual cursor and go back to the previous virtual cursor location.
+"Ctrl-x in Visual mode will remove the current virtual cursor and skip to the next virtual cursor location. 
 
 Bundle 'tpope/vim-surround'
 
