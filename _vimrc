@@ -187,9 +187,6 @@ xmap > ]
 Bundle 'tpope/vim-repeat'
 
 Bundle 'altercation/vim-colors-solarized'
-syntax enable
-set background=dark
-colorscheme solarized
 
 Bundle 'jaanauati/vim-wordfuzzycompletion-plugin'
 
@@ -245,18 +242,22 @@ nmap <leader>p "+p
 map <silent> <F9> :TlistToggle<CR>
 let Tlist_GainFocus_On_ToggleOpen = 1
 
-“Mappings of Jumping
+"Mappings of Jumping
 nmap <A-j> <C-f>
 nmap <A-k> <C-b>
 
+syntax enable
+set background=dark
+colorscheme solarized
+
 "Add PHP Dictionary, php_funclist.txt should be downloaded and placed in ur appropriate directory
-set dictionary-=~/php_funclist.txt dictionary+=~/php_funclist.txt
-set complete-=k complete+=k
-au FileType php call AddPHPFuncList()
-function AddPHPFuncList()
-	set dictionary-=~/php_funclist.txt dictionary+=~/php_funclist.txt
-	set complete-=k complete+=k
-endfunction
+"set dictionary-=~/php_funclist.txt dictionary+=~/php_funclist.txt
+"set complete-=k complete+=k
+"au FileType php call AddPHPFuncList()
+"function AddPHPFuncList()
+"	set dictionary-=~/php_funclist.txt dictionary+=~/php_funclist.txt
+"	set complete-=k complete+=k
+"endfunction
 
 syntax enable
 
