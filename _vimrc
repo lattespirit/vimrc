@@ -4,8 +4,11 @@
 
 set nocompatible
 
+"Set mapleader
+let mapleader = ","
+
 "backspace key method
-"set backspace=indent,eol,start
+set backspace=indent,eol,start
 
 "Show Line Number
 set number
@@ -116,12 +119,8 @@ imap   <leader><leader>e   <plug>(emmet-expand-abbr)
 "imap   <leader><leader>c   <plug>(emmet-code-pretty)
 
 Bundle 'easymotion/vim-easymotion'
-
-"Turn off the default settins
+"Turn off the default settings
 let g:EasyMotion_do_mapping = 0
-
-"Set mapleader
-let mapleader = ","
 
 "Overwrite the default s key to search with two keystroke using easymotion
 nmap s <Plug>(easymotion-s)
@@ -137,10 +136,10 @@ map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 
 Bundle 'terryma/vim-multiple-cursors'
-"Fix backspace bug when inserting with multiple cursor
-set backspace=indent,eol,start
 "Ctrl-p in Visual mode will remove the current virtual cursor and go back to the previous virtual cursor location.
 "Ctrl-x in Visual mode will remove the current virtual cursor and skip to the next virtual cursor location. 
+let g:multi_cursor_exit_from_insert_mode = 0
+let g:multi_cursor_exit_from_visual_mode = 0
 
 Bundle 'tpope/vim-surround'
 
@@ -188,6 +187,13 @@ Bundle 'tpope/vim-repeat'
 
 Bundle 'altercation/vim-colors-solarized'
 
+"It's a better choice using molokai when editing in terminal
+"Bundle 'tomasr/molokai'
+"original monlkai background color
+"let g:molokai_original = 1
+"to bring the 256 color version as close as possible to the the default
+"let g:rehash256 = 1
+
 Bundle 'jaanauati/vim-wordfuzzycompletion-plugin'
 
 Bundle 'junegunn/vim-easy-align'
@@ -228,7 +234,7 @@ nmap L <C-w>L
 
 "Mapping ESC key
 imap jj <esc>
-vmap ; <esc>
+vmap ; vv
 
 "About MYVIMRC File
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
