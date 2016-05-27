@@ -71,6 +71,10 @@ set encoding=utf-8
 "Auto determine the encoding by turn
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 
+"Set Language
+let $LANG = 'en'
+set langmenu=en
+
 "Detect filetype
 filetype on
 
