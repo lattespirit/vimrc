@@ -198,6 +198,8 @@ Bundle 'altercation/vim-colors-solarized'
 "to bring the 256 color version as close as possible to the the default
 "let g:rehash256 = 1
 
+Bundle 'tomasr/molokai'
+
 Bundle 'jaanauati/vim-wordfuzzycompletion-plugin'
 
 Bundle 'junegunn/vim-easy-align'
