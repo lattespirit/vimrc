@@ -229,6 +229,8 @@ Bundle 'stephpy/vim-php-cs-fixer'
 "let g:php_cs_fixer_dry_run = 0                    " Call command with dry-run option
 "let g:php_cs_fixer_verbose = 0                    " Return the output of command if 1, else an inline information.
 
+Bundle 'tpope/vim-fugitive'
+
 call vundle#end()
 filetype plugin indent on
 
