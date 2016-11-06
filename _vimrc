@@ -331,5 +331,12 @@ map <silent> <F2> :if &guioptions =~# 'T' <Bar>
 "endfunction
 
 "=================Auto-Commands=================
-"Automatically source the vimrc file when file on save.
-autocmd BufWritePost .vimrc source %
+augroup autoSourcing
+	autocmd!
+	autocmd BufWritePost .vimrc source %
+augroup END
+
+"=================Search=================
+set hlsearch
+set incsearch
+nmap <leader><space> :nohlsearch<CR>
