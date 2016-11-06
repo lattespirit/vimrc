@@ -231,6 +231,8 @@ Bundle 'stephpy/vim-php-cs-fixer'
 
 Bundle 'tpope/vim-fugitive'
 
+Bundle 'arnaud-lb/vim-php-namespace'
+
 call vundle#end()
 filetype plugin indent on
 
