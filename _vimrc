@@ -329,3 +329,7 @@ map <silent> <F2> :if &guioptions =~# 'T' <Bar>
 "      execute 'source $HOME/.vim/sessions/session.vim'
 "   endif
 "endfunction
+
+"=================Auto-Commands=================
+"Automatically source the vimrc file when file on save.
+autocmd BufWritePost .vimrc source %
