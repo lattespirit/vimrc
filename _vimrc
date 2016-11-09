@@ -103,6 +103,7 @@ Bundle 'The-NERD-tree'
 let NERDTreeMinimalUI=1
 let NERDChristmasTree=1
 nmap <F3> :NERDTreeToggle  <CR>
+let NERDTreeHijackNetrw = 0
 
 Bundle 'Emmet.vim'
 "Map Emmet Expand Trigger key
@@ -232,6 +233,8 @@ Bundle 'stephpy/vim-php-cs-fixer'
 Bundle 'tpope/vim-fugitive'
 
 Bundle 'arnaud-lb/vim-php-namespace'
+
+Bundle 'tpope/vim-vinegar'
 
 call vundle#end()
 filetype plugin indent on
