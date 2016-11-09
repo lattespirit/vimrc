@@ -340,3 +340,14 @@ augroup END
 set hlsearch
 set incsearch
 nmap <leader><space> :nohlsearch<CR>
+
+"=================CtrlP=================
+nmap <a-r> :CtrlPBufTag<CR>
+nmap <a-e> :CtrlPMRUFiles<CR>
+
+
+"=================Visuals=================
+set guioptions-=l
+set guioptions-=L
+set guioptions-=r
+set guioptions-=R
