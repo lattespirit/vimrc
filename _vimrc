@@ -236,6 +236,12 @@ Bundle 'arnaud-lb/vim-php-namespace'
 
 Bundle 'tpope/vim-vinegar'
 
+Bundle 'rking/ag.vim'
+
+Bundle 'skwp/greplace.vim'
+set grepprg=ag
+let g:grep_cmd_opts = '--line-numbers --noheading'
+
 call vundle#end()
 filetype plugin indent on
 
