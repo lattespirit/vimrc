@@ -233,6 +233,19 @@ Bundle 'stephpy/vim-php-cs-fixer'
 Bundle 'tpope/vim-fugitive'
 
 Bundle 'arnaud-lb/vim-php-namespace'
+function! IPhpInsertUse()
+    call PhpInsertUse()
+    call feedkeys('a',  'n')
+endfunction
+autocmd FileType php inoremap <Leader>n <Esc>:call IPhpInsertUse()<CR>
+autocmd FileType php noremap <Leader>n :call PhpInsertUse()<CR>
+
+function! IPhpExpandClass()
+    call PhpExpandClass()
+    call feedkeys('a', 'n')
+endfunction
+autocmd FileType php inoremap <Leader>nf <Esc>:call IPhpExpandClass()<CR>
+autocmd FileType php noremap <Leader>nf :call PhpExpandClass()<CR>
 
 Bundle 'tpope/vim-vinegar'
 
@@ -241,6 +254,13 @@ Bundle 'rking/ag.vim'
 Bundle 'skwp/greplace.vim'
 set grepprg=ag
 let g:grep_cmd_opts = '--line-numbers --noheading'
+
+Bundle 'ervandew/supertab'
+
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'garbas/vim-snipmate'
+set autowrite
 
 call vundle#end()
 filetype plugin indent on
