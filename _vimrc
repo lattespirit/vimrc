@@ -262,6 +262,10 @@ Bundle 'tomtom/tlib_vim'
 Bundle 'garbas/vim-snipmate'
 set autowrite
 
+"Bundle 'tobyS/vmustache'
+"Bundle 'tobyS/pdv'
+"Bundle 'SirVer/ultisnips'
+
 call vundle#end()
 filetype plugin indent on
 
