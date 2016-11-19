@@ -265,6 +265,12 @@ set autowrite
 "Bundle 'tobyS/vmustache'
 "Bundle 'tobyS/pdv'
 "Bundle 'SirVer/ultisnips'
+let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
+nnoremap <Leader>d :call pdv#DocumentWithSnip()<CR>
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 call vundle#end()
 filetype plugin indent on
