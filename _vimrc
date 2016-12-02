@@ -274,6 +274,8 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 Bundle 'xolox/vim-shell'
 Bundle 'xolox/vim-misc'
+let g:shell_fullscreen_always_on_top = 0
+let g:shell_fullscreen_message = 0
 
 call vundle#end()
 filetype plugin indent on
