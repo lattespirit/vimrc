@@ -272,6 +272,9 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
+Bundle 'xolox/vim-shell'
+Bundle 'xolox/vim-misc'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -344,7 +347,7 @@ let g:user_emmet_settings = {
   \}
 
 "Toggle Fullscreen in Windows using gvim(gvimfullscreen.dll required)
-map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
+"map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
   
 "Toggle Menu and Toolbar
 set guioptions-=m
