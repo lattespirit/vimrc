@@ -97,6 +97,7 @@ call vundle#begin()
 Bundle 'VundleVim/Vundle.vim'
 
 Bundle 'vim-airline/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
 
 Bundle 'The-NERD-tree'
 let NERDTreeMinimalUI=1
