@@ -402,3 +402,7 @@ highlight LineNr guibg=bg
 set foldcolumn=2
 highlight foldcolumn guibg=bg
 highlight vertsplit guifg=bg guibg=bg
+
+"Show tab with . character
+nmap <leader>i :set list listchars=tab:\.\.<CR>
+nmap <leader>ni :set list listchars=tab:\ \ <CR>
