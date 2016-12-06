@@ -11,7 +11,7 @@ let mapleader = ","
 set backspace=indent,eol,start
 
 "Show Line Number
-set number
+set nonumber
 
 "Show Line Info(row and column info)
 "set ruler
@@ -55,7 +55,7 @@ set ignorecase
 set mouse=a
 
 "Set tab width
-"set tabstop=4
+set tabstop=4
 
 "Set autointent space num
 set shiftwidth=4
@@ -88,7 +88,6 @@ filetype plugin on
 "filetype plugin indent on
 
 "Vundle Configuration Begin
-set nocompatible
 filetype off
 "set rtp+=~/vimfiles/bundle/Vundle.vim
 "call vundle#begin('~/vimfiles/')
@@ -389,9 +388,16 @@ nmap <leader><space> :nohlsearch<CR>
 nmap <a-r> :CtrlPBufTag<CR>
 nmap <a-e> :CtrlPMRUFiles<CR>
 
-
 "=================Visuals=================
 set guioptions-=l
 set guioptions-=L
 set guioptions-=r
 set guioptions-=R
+
+nmap <leader>w :w<CR>
+nmap <leader>q :q<CR>
+
+highlight LineNr guibg=bg
+set foldcolumn=2
+highlight foldcolumn guibg=bg
+highlight vertsplit guifg=bg guibg=bg
