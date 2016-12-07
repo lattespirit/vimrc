@@ -421,3 +421,16 @@ function! ToggleStatusLine()
         let g:status_line_is_open = 1
     endif
 endfunction
+
+nmap <leader>l :call ToggleLineNumber()<CR>
+let g:line_number_is_open = 0
+
+function! ToggleLineNumber()
+    if g:line_number_is_open
+        set nonu
+        let g:line_number_is_open = 0
+    else
+        set nu
+        let g:line_number_is_open = 1
+    endif
+endfunction
