@@ -395,9 +395,13 @@ set foldcolumn=2
 highlight foldcolumn guibg=bg
 highlight vertsplit guifg=bg guibg=bg
 
-"Show tab with . character
-nmap <leader>i :set list listchars=tab:\.\.<CR>
-nmap <leader>ni :set list listchars=tab:\ \ <CR>
+"Show tab/space with . character
+"set list listchars=tab:\.\.
+"nmap <leader>i :set list listchars=tab:\.\.<CR>
+"nmap <leader>ii :set list listchars=tab:\ \ <CR>
+set list listchars=space:.
+nmap <leader>i :set list listchars=space:.<CR>
+nmap <leader>ii :set list listchars=space:\ <CR>
 
 "Do NOT show status line by default
 set laststatus=0
