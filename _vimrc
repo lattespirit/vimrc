@@ -409,7 +409,7 @@ nmap <leader>ni :set list listchars=tab:\ \ <CR>
 "Do NOT show status line by default
 set laststatus=0
 
-nmap <leader>s :call ToggleStatusline()<cr>
+nmap <leader>s :call ToggleStatusLine()<cr>
 let g:status_line_is_open = 0
 
 function! ToggleStatusLine()
