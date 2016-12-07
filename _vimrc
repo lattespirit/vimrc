@@ -280,7 +280,6 @@ let g:shell_fullscreen_message = 0
 call vundle#end()
 filetype plugin indent on
 
-set laststatus=2
 let g:Powline_symbols='fancy'
 set enc=utf-8
 set termencoding=&encoding
@@ -406,3 +405,19 @@ highlight vertsplit guifg=bg guibg=bg
 "Show tab with . character
 nmap <leader>i :set list listchars=tab:\.\.<CR>
 nmap <leader>ni :set list listchars=tab:\ \ <CR>
+
+"Do NOT show status line by default
+set laststatus=0
+
+nmap <leader>s :call ToggleStatusline()<cr>
+let g:status_line_is_open = 0
+
+function! ToggleStatusLine()
+    if g:status_line_is_open
+        set laststatus=0
+        let g:status_line_is_open = 0
+    else
+        set laststatus=2
+        let g:status_line_is_open = 1
+    endif
+endfunction
