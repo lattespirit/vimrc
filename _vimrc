@@ -40,6 +40,13 @@ set cursorcolumn
 "Set autoindent the way like C/C++
 set autoindent
 set cindent
+set smartindent
+set expandtab
+"set smarttab
+
+set tabstop=4           "Set tab width
+set softtabstop=4       "Delete 4 spaces when hitting backspace key
+set shiftwidth=4        "Set autointent space num
 
 "Turn on the syntax highlight
 syntax enable
@@ -53,20 +60,6 @@ set ignorecase
 
 "Turn on using mouse in Vim so we can copy in Linux Terminal
 set mouse=a
-
-"Set tab width
-set tabstop=4
-
-"Set autointent space num
-set shiftwidth=4
-
-"Delete 4 spaces when hitting backspace key
-"set softtabstop=4
-
-"set smarttab
-
-"Set encoding
-set encoding=utf-8
 
 "Auto determine the encoding by turn
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
