@@ -91,6 +91,7 @@ Bundle 'VundleVim/Vundle.vim'
 
 Bundle 'vim-airline/vim-airline'
 Bundle 'vim-airline/vim-airline-themes'
+let g:airline_theme='tomorrow'
 
 Bundle 'The-NERD-tree'
 let NERDTreeMinimalUI=1
@@ -397,11 +398,12 @@ highlight vertsplit guifg=bg guibg=bg
 
 "Show tab/space with . character
 "set list listchars=tab:\.\.
-"nmap <leader>i :set list listchars=tab:\.\.<CR>
-"nmap <leader>ii :set list listchars=tab:\ \ <CR>
-set list listchars=space:.
-nmap <leader>i :set list listchars=space:.<CR>
-nmap <leader>ii :set list listchars=space:\ <CR>
+nmap <leader>i :set list listchars=tab:\.\.<CR>
+nmap <leader>ii :set list listchars=tab:\ \ <CR>
+"Show space with . character
+"set list listchars=space:.
+nmap <leader>sp :set list listchars=space:.<CR>
+nmap <leader>isp :set list listchars=space:\ <CR>	"In MacVim "\ " will be replaced by " "
 
 "Do NOT show status line by default
 set laststatus=0
