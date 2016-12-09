@@ -259,12 +259,28 @@ set autowrite
 "Bundle 'tobyS/vmustache'
 "Bundle 'tobyS/pdv'
 "Bundle 'SirVer/ultisnips'
+"Bundle 'honza/vim-snippets'
 let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
 nnoremap <Leader>d :call pdv#DocumentWithSnip()<CR>
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+
+Bundle 'adoy/vim-php-refactoring-toolbox'
+"nnoremap <unique> <Leader>rlv :call PhpRenameLocalVariable()<CR>
+"nnoremap <unique> <Leader>rcv :call PhpRenameClassVariable()<CR>
+"nnoremap <unique> <Leader>rm :call PhpRenameMethod()<CR>
+"nnoremap <unique> <Leader>eu :call PhpExtractUse()<CR>
+"vnoremap <unique> <Leader>ec :call PhpExtractConst()<CR>
+"nnoremap <unique> <Leader>ep :call PhpExtractClassProperty()<CR>
+"vnoremap <unique> <Leader>em :call PhpExtractMethod()<CR>
+"nnoremap <unique> <Leader>np :call PhpCreateProperty()<CR>
+"nnoremap <unique> <Leader>du :call PhpDetectUnusedUseStatements()<CR>
+"vnoremap <unique> <Leader>== :call PhpAlignAssigns()<CR>
+"nnoremap <unique> <Leader>sg :call PhpCreateSettersAndGetters()<CR>
+"nnoremap <unique> <Leader>cog :call PhpCreateGetters()<CR>
+"nnoremap <unique> <Leader>da :call PhpDocAll()<CR>
 
 Bundle 'xolox/vim-shell'
 Bundle 'xolox/vim-misc'
