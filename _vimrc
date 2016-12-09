@@ -465,3 +465,12 @@ endfunction
 " - Press ':tn' to go to the next tag after tag found
 " - Press ':tp' to go to the previous tag after tag found
 " - Press ':ts' to select the multiple same tags after tag found
+"
+"   Ctags
+"
+" - Ctrl+] - go to definition
+" - g Ctrl+] - List all definitions when multipe ones exist
+" - Ctrl+T - Jump back from the definition.
+" - Ctrl+W Ctrl+] - Open the definition in a horizontal split
+" - Ctrl+Left MouseClick - Go to definition
+" - Ctrl+Right MouseClick - Jump back from definition
