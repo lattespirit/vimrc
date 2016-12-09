@@ -153,11 +153,11 @@ Bundle 'kien/ctrlp.vim'
 let g:ctrlp_match_window = 'top,order:btt,min:1,max:10,results:10'
 let g:ctrlp_switch_buffer = 'et'
 
-Bundle 'sjl/gundo.vim'
-nnoremap <F5> :GundoToggle<CR>
-let g:gundo_width = 50
-let g:gundo_preview_height = 20
-let g:gundo_right = 0
+"Bundle 'sjl/gundo.vim'
+"nnoremap <F5> :GundoToggle<CR>
+"let g:gundo_width = 50
+"let g:gundo_preview_height = 20
+"let g:gundo_right = 0
 
 "auto-completion for quotes, parens, brackets, etc
 Bundle 'Raimondi/delimitMate'
@@ -175,16 +175,16 @@ Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-commentary'
 
 Bundle 'tpope/vim-unimpaired'
-nmap < [
-nmap > ]
-omap < [
-omap > ]
-xmap < [
-xmap > ]
+"nmap < [
+"nmap > ]
+"omap < [
+"omap > ]
+"xmap < [
+"xmap > ]
 
 Bundle 'tpope/vim-repeat'
 
-Bundle 'altercation/vim-colors-solarized'
+"Bundle 'altercation/vim-colors-solarized'
 
 "It's a better choice using molokai when editing in terminal
 "Bundle 'tomasr/molokai'
@@ -271,6 +271,12 @@ Bundle 'xolox/vim-misc'
 let g:shell_fullscreen_always_on_top = 0
 let g:shell_fullscreen_message = 0
 
+Bundle 'KeitaNakamura/neodark.vim'
+"let g:neodark#background='brown' " black, gray or brown
+colorscheme neodark
+
+Bundle 'duggiefresh/vim-easydir'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -313,8 +319,8 @@ nmap <A-j> <C-f>
 nmap <A-k> <C-b>
 
 syntax enable
-set background=dark
-colorscheme solarized
+"set background=dark
+"colorscheme solarized
 
 "Add PHP Dictionary, php_funclist.txt should be downloaded and placed in ur appropriate directory
 "set dictionary-=~/php_funclist.txt dictionary+=~/php_funclist.txt
@@ -324,8 +330,6 @@ colorscheme solarized
 "	set dictionary-=~/php_funclist.txt dictionary+=~/php_funclist.txt
 "	set complete-=k complete+=k
 "endfunction
-
-syntax enable
 
 "Emmet Settings
 let g:user_emmet_settings = {
@@ -398,8 +402,8 @@ highlight vertsplit guifg=bg guibg=bg
 
 "Show tab/space with . character
 "set list listchars=tab:\.\.
-nmap <leader>i :set list listchars=tab:\.\.<CR>
-nmap <leader>ii :set list listchars=tab:\ \ <CR>
+nmap <leader>t :set list listchars=tab:\.\.<CR>
+nmap <leader>tt :set list listchars=tab:\ \ <CR>
 "Show space with . character
 "set list listchars=space:.
 nmap <leader>sp :set list listchars=space:.<CR>
