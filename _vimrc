@@ -425,6 +425,12 @@ nmap <leader>tt :set list listchars=tab:\ \ <CR>
 nmap <leader>sp :set list listchars=space:.<CR>
 nmap <leader>isp :set list listchars=space:\ <CR>	"In MacVim "\ " will be replaced by " "
 
+"Trigger to find tag
+nmap <leader>f :tag<space>
+
+"Trigger to rebuild tags using ctags in the current pathj
+nmap <leader>tags :!ctags -R *
+
 "Do NOT show status line by default
 set laststatus=0
 
@@ -453,3 +459,9 @@ function! ToggleLineNumber()
         let g:line_number_is_open = 1
     endif
 endfunction
+
+" Notes and Tips
+" - Press 'zz' to instatly center the line where the cursor is located
+" - Press ':tn' to go to the next tag after tag found
+" - Press ':tp' to go to the previous tag after tag found
+" - Press ':ts' to select the multiple same tags after tag found
