@@ -289,7 +289,12 @@ let g:shell_fullscreen_message = 0
 
 Bundle 'KeitaNakamura/neodark.vim'
 "let g:neodark#background='brown' " black, gray or brown
-colorscheme neodark
+"colorscheme neodark
+
+Bundle 'kristijanhusak/vim-hybrid-material'
+"let g:enable_bold_font = 1
+set background=dark
+colorscheme hybrid_material
 
 Bundle 'duggiefresh/vim-easydir'
 
