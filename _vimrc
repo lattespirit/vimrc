@@ -93,11 +93,13 @@ Bundle 'vim-airline/vim-airline'
 Bundle 'vim-airline/vim-airline-themes'
 let g:airline_theme='tomorrow'
 
-Bundle 'The-NERD-tree'
+Bundle 'scrooloose/nerdtree'
+nmap <F3> :NERDTreeToggle <CR>
+let NERDTreeHijackNetrw = 0
 let NERDTreeMinimalUI=1
 let NERDChristmasTree=1
-nmap <F3> :NERDTreeToggle  <CR>
-let NERDTreeHijackNetrw = 0
+let g:NERDTreeDirArrowExpandable = '▶'
+let g:NERDTreeDirArrowCollapsible = '◀'
 
 Bundle 'Emmet.vim'
 "Map Emmet Expand Trigger key
