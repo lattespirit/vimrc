@@ -300,6 +300,9 @@ colorscheme hybrid_material
 
 Bundle 'duggiefresh/vim-easydir'
 
+Bundle 'tpope/vim-commentary'
+vmap <leader>c :Commentary<CR>
+
 call vundle#end()
 filetype plugin indent on
 
