@@ -175,6 +175,7 @@ Bundle 'spiiph/vim-space'
 Bundle 'scrooloose/syntastic'
 
 Bundle 'tpope/vim-commentary'
+vmap <leader>c :Commentary<CR>
 
 Bundle 'tpope/vim-unimpaired'
 "nmap < [
@@ -299,9 +300,6 @@ set background=dark
 colorscheme hybrid_material
 
 Bundle 'duggiefresh/vim-easydir'
-
-Bundle 'tpope/vim-commentary'
-vmap <leader>c :Commentary<CR>
 
 call vundle#end()
 filetype plugin indent on
