@@ -342,9 +342,12 @@ let Tlist_GainFocus_On_ToggleOpen = 1
 nmap <A-j> <C-f>
 nmap <A-k> <C-b>
 
-syntax enable
-"set background=dark
-"colorscheme solarized
+"Resize vsplit
+nmap <C-v> :vertical resize +5<cr>
+nmap <C-x> :vertical resize -5<cr>
+nmap 25 :vertical resize 40<cr>
+nmap 50 <C-W>=
+nmap 75 :vertical resize 120<cr>
 
 "Add PHP Dictionary, php_funclist.txt should be downloaded and placed in ur appropriate directory
 "set dictionary-=~/php_funclist.txt dictionary+=~/php_funclist.txt
