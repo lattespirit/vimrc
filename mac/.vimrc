@@ -354,7 +354,6 @@ let Tlist_GainFocus_On_ToggleOpen = 1
 nmap <A-j> <C-f>
 nmap <A-k> <C-b>
 
-
 nnoremap <silent><leader>pcd :call PhpCsFixerFixDirectory()<CR>
 nnoremap <silent><leader>pcf :call PhpCsFixerFixFile()<CR>
 
@@ -370,9 +369,12 @@ let g:php_cs_fixer_enable_default_mapping = 1     " Enable the mapping by defaul
 let g:php_cs_fixer_dry_run = 0                    " Call command with dry-run option
 let g:php_cs_fixer_verbose = 0                    " Return the output of command if 1, else an inline information.
 
-syntax enable
-set background=dark
-"colorscheme atom-dark
+"Resize vsplit
+nmap <C-v> :vertical resize +5<cr>
+nmap <C-x> :vertical resize -5<cr>
+nmap 25 :vertical resize 40<cr>
+nmap 50 <C-W>=
+nmap 75 :vertical resize 120<cr>
 
 "Add PHP Dictionary, php_funclist.txt should be downloaded and placed in ur appropriate directory
 "set dictionary-=~/php_funclist.txt dictionary+=~/php_funclist.txt
