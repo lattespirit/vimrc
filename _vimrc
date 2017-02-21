@@ -95,6 +95,8 @@ let g:airline_theme='tomorrow'
 
 Bundle 'scrooloose/nerdtree'
 nmap <F3> :NERDTreeToggle <CR>
+nmap <A-1> :NERDTreeToggle <CR>
+nmap <leader>r :NERDTreeFind <CR>
 let NERDTreeHijackNetrw = 0
 let NERDTreeMinimalUI=1
 let NERDChristmasTree=1
