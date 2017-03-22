@@ -157,6 +157,10 @@ Bundle 'kien/ctrlp.vim'
 let g:ctrlp_match_window = 'top,order:btt,min:1,max:10,results:10'
 let g:ctrlp_switch_buffer = 'et'
 
+Bundle 'ivalkeen/vim-ctrlp-tjump'
+nnoremap <leader>g :CtrlPtjump<cr>
+vnoremap <leader>g :CtrlPtjumpVisual<cr>
+
 "Bundle 'sjl/gundo.vim'
 "nnoremap <F5> :GundoToggle<CR>
 "let g:gundo_width = 50
@@ -453,7 +457,28 @@ nmap <leader>tags :!ctags -R --PHP-kinds=+cf-vtpj --exclude=vendor --exclude=.gi
 "Do NOT show status line by default
 set laststatus=0
 
-nmap <leader>s :call ToggleStatusLine()<cr>
+"Auto change directory to match current file ,cd
+nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
+
+" Abbreviations
+abbrev art !php artisan
+abbrev mm !php artisan make:model
+abbrev mc !php artisan make:controller
+abbrev goto CtrlPtjump
+
+nmap <leader>1 :vertical resize 40<CR>
+nmap <leader>2 <C-W>=
+nmap <leader>3 :vertical resize 120<CR>
+
+"Netrw Settings
+let g:netrw_liststyle = 3
+let g:netrw_banner = 1
+let g:netrw_winsize = 25
+
+nmap sp :sp<CR><C-j>
+nmap vsp :vsp<CR><C-l>
+
+nmap <leader>s :call ToggleStatusLine()<CR>
 let g:status_line_is_open = 0
 
 function! ToggleStatusLine()
