@@ -307,6 +307,8 @@ Bundle 'duggiefresh/vim-easydir'
 Bundle 'jlanzarotta/bufexplorer'
 noremap <silent> <CR> :BufExplorerHorizontalSplit<CR>
 
+Bundle 'terryma/vim-expand-region'
+
 call vundle#end()
 filetype plugin indent on
 
