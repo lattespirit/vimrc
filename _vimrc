@@ -413,7 +413,7 @@ map <silent> <F2> :if &guioptions =~# 'T' <Bar>
 "=================Auto-Commands=================
 augroup autoSourcing
 	autocmd!
-	autocmd BufWritePost .vimrc source %
+	autocmd BufWritePost $MYVIMRC source $MYVIMRC
 augroup END
 
 "=================Search=================
