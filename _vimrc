@@ -316,6 +316,14 @@ Bundle 'terryma/vim-expand-region'
 map <space> <Plug>(expand_region_expand)
 map <S-space> <Plug>(expand_region_shrink)
 
+Bundle 'arcticicestudio/nord-vim'
+
+Bundle 'airblade/vim-gitgutter'
+
+Bundle 'gregsexton/gitv'
+
+Bundle 'Xuyuanp/nerdtree-git-plugin'
+
 call vundle#end()
 filetype plugin indent on
 
