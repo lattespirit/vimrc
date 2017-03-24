@@ -312,6 +312,9 @@ Bundle 'jlanzarotta/bufexplorer'
 noremap <silent> <CR> :BufExplorerHorizontalSplit<CR>
 
 Bundle 'terryma/vim-expand-region'
+" Press + to expand the visual selection and _ to shrink it as default
+map <space> <Plug>(expand_region_expand)
+map <S-space> <Plug>(expand_region_shrink)
 
 call vundle#end()
 filetype plugin indent on
