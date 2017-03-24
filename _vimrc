@@ -324,6 +324,8 @@ Bundle 'gregsexton/gitv'
 
 Bundle 'Xuyuanp/nerdtree-git-plugin'
 
+Bundle 'Shougo/unite.vim'
+
 call vundle#end()
 filetype plugin indent on
 
