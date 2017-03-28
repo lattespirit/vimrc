@@ -478,6 +478,7 @@ abbrev art !php artisan
 abbrev mm !php artisan make:model
 abbrev mc !php artisan make:controller
 abbrev goto CtrlPtjump
+abbrev json %!python -m json.tool<CR>
 
 nmap <leader>1 :vertical resize 40<CR>
 nmap <leader>2 <C-W>=
