@@ -325,6 +325,44 @@ Bundle 'gregsexton/gitv'
 Bundle 'Xuyuanp/nerdtree-git-plugin'
 
 Bundle 'Shougo/unite.vim'
+let g:unite_source_menu_menus = get(g:,'unite_source_menu_menus',{})
+let g:unite_source_menu_menus.git = {
+    \ 'description' : ' Hello There Menu'
+    \}
+let g:unite_source_menu_menus.git.command_candidates = [
+    \['+ gitv',
+        \'Gitv'],
+    \['+ git status       (Fugitive)',
+        \'Gstatus'],
+    \['+ git diff         (Fugitive)',
+        \'Gdiff'],
+    \['+ git commit       (Fugitive)',
+        \'Gcommit'],
+    \['+ git log          (Fugitive)',
+        \'exe "silent Glog | Unite quickfix"'],
+    \['+ git blame        (Fugitive)',
+        \'Gblame'],
+    \['+ git add          (Fugitive)',
+        \'Gwrite'],
+    \['+ git checkout     (Fugitive)',
+        \'Gread'],
+    \['+ git rm           (Fugitive)',
+        \'Gremove'],
+    \['+ git mv           (Fugitive)',
+        \'exe "Gmove " input("destino: ")'],
+    \['+ git push         (Fugitive, salida por buffer)',
+        \'Git! push'],
+    \['+ git pull         (Fugitive, salida por buffer)',
+        \'Git! pull'],
+    \['+ git prompt       (Fugitive, salida por buffer)',
+        \'exe "Git! " input("comando git: ")'],
+    \['+ git cd           (Fugitive)',
+        \'Gcd'],
+    \]
+nnoremap <C-g> :Unite -silent -start-insert menu:git<CR>
+
+Bundle 'Shougo/neoyank.vim'
+nnoremap ù :Unite history/yank<cr>
 
 call vundle#end()
 filetype plugin indent on
