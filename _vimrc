@@ -183,6 +183,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-commentary'
 nmap <BS> gcc
 vmap <BS> gc
+autocmd FileType php setlocal commentstring=//%s
 
 Bundle 'tpope/vim-unimpaired'
 "nmap < [
