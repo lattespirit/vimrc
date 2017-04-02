@@ -365,6 +365,15 @@ nnoremap <C-g> :Unite -silent -start-insert menu:git<CR>
 Bundle 'Shougo/neoyank.vim'
 nnoremap ù :Unite history/yank<cr>
 
+Bundle 'Shougo/vimproc.vim'
+Bundle 'Shougo/vimshell.vim'
+" let g:vimshell_user_prompt = 'fnamemodify(getcwd(), ":~")'
+let g:vimshell_prompt_expr =
+		\ 'escape(fnamemodify(getcwd(), ":~").">", "\\[]()?! ")." "'
+		let g:vimshell_prompt_pattern = '^\%(\f\|\\.\)\+> '
+
+Bundle 'rizzatti/dash.vim'
+
 call vundle#end()
 filetype plugin indent on
 
