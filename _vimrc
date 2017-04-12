@@ -103,7 +103,7 @@ let NERDChristmasTree=1
 let g:NERDTreeDirArrowExpandable = '▶'
 let g:NERDTreeDirArrowCollapsible = '◀'
 
-Bundle 'Emmet.vim'
+Bundle 'mattn/emmet-vim'
 "Map Emmet Expand Trigger key
 imap   <leader><leader>e   <plug>(emmet-expand-abbr)
 "imap   <leader><leader>;   <plug>(emmet-expand-word)
