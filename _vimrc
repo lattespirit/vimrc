@@ -529,8 +529,7 @@ nmap <leader>isp :set list listchars=space:\ <CR>	"In MacVim "\ " will be replac
 nmap <leader>f :tag<space>
 
 "Trigger to rebuild tags using ctags in the current path
-nmap <leader>tags :!ctags -R --PHP-kinds=+cf-vtpj --exclude=vendor --exclude=.git --exclude=svn --exclude=assests --exclude=static
-
+nmap <leader>tags :!ctags -R --fields=+aimlS --languages=php --exclude=.git --exclude=svn --exclude=assests --exclude=static<CR>
 "Do NOT show status line by default
 set laststatus=0
 
