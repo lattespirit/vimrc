@@ -156,6 +156,7 @@ Bundle 'kien/ctrlp.vim'
 "Use <c-n>, <c-p> to select the next/previous string in the prompt's history.
 let g:ctrlp_match_window = 'top,order:btt,min:1,max:10,results:10'
 let g:ctrlp_switch_buffer = 'et'
+let g:ctrlp_use_caching = 0
 
 Bundle 'ivalkeen/vim-ctrlp-tjump'
 nnoremap <leader>g :CtrlPtjump<cr>
