@@ -562,8 +562,12 @@ nmap vsp :vsp<CR><C-l>
 nmap <leader>a :call ToggleStatusLine()<CR>
 let g:status_line_is_open = 0
 
+" Really jump to down/up line
 nnoremap j gj
 nnoremap k gk
+
+" Create/edit file in the current directory
+nmap <leader>ed :edit %:p:h/
 
 function! ToggleStatusLine()
     if g:status_line_is_open
