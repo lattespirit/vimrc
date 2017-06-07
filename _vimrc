@@ -544,9 +544,12 @@ abbrev mc !php artisan make:controller
 abbrev goto CtrlPtjump
 abbrev json %!python -m json.tool<CR>
 
-nmap <leader>1 :vertical resize 40<CR>
-nmap <leader>2 <C-W>=
-nmap <leader>3 :vertical resize 120<CR>
+"Resize vsplit
+nmap <C-v> :vertical resize +5<cr>
+nmap <C-x> :vertical resize -5<cr>
+nmap 22 :vertical resize 40<cr>
+nmap 55 <C-W>=
+nmap 77 :vertical resize 120<cr>
 
 "Netrw Settings
 let g:netrw_liststyle = 3
@@ -556,8 +559,11 @@ let g:netrw_winsize = 25
 nmap sp :sp<CR><C-j>
 nmap vsp :vsp<CR><C-l>
 
-nmap <leader>s :call ToggleStatusLine()<CR>
+nmap <leader>a :call ToggleStatusLine()<CR>
 let g:status_line_is_open = 0
+
+nnoremap j gj
+nnoremap k gk
 
 function! ToggleStatusLine()
     if g:status_line_is_open
