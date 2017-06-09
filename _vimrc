@@ -538,11 +538,12 @@ set laststatus=0
 nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
 
 " Abbreviations
-abbrev art !php artisan
-abbrev mm !php artisan make:model
-abbrev mc !php artisan make:controller
-abbrev goto CtrlPtjump
-abbrev json %!python -m json.tool<CR>
+cabbrev art !php artisan
+cabbrev mm !php artisan make:model
+cabbrev mc !php artisan make:controller
+cabbrev goto CtrlPtjump
+cabbrev json %!python -m json.tool<CR>
+cabbrev _cd %:p:h/
 
 "Resize vsplit
 nmap <C-v> :vertical resize +5<cr>
